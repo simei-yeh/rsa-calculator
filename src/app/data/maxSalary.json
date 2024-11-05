@@ -1,0 +1,278 @@
+{
+  "COURT DEPUTY": {
+    "December 2025 Range Increase": 43.02,
+    "December 2025 10% COLA": 47.32,
+    "December 2026 5% COLA": 49.69,
+    "December 2027 4% COLA": 51.68
+  },
+  "DEPUTY SHERIFF TRAINEE": {
+    "December 2025 Range Increase": 45.12,
+    "December 2025 10% COLA": 49.63,
+    "December 2026 5% COLA": 52.11,
+    "December 2027 4% COLA": 54.20
+  },
+  "DEPUTY SHERIFF": {
+    "December 2025 Range Increase": 56.58,
+    "December 2025 10% COLA": 62.24,
+    "December 2026 5% COLA": 65.35,
+    "December 2027 4% COLA": 67.96
+  },
+  "DEPUTY SHERIFF-84": {
+    "December 2025 Range Increase": 56.58,
+    "December 2025 10% COLA": 62.24,
+    "December 2026 5% COLA": 65.35,
+    "December 2027 4% COLA": 67.96
+  },
+  "DEPUTY SHERIFF A": {
+    "December 2025 Range Increase": 60.57,
+    "December 2025 10% COLA": 66.63,
+    "December 2026 5% COLA": 69.96,
+    "December 2027 4% COLA": 72.76
+  },
+  "DEPUTY SHERIFF A-84": {
+    "December 2025 Range Increase": 60.57,
+    "December 2025 10% COLA": 66.63,
+    "December 2026 5% COLA": 69.96,
+    "December 2027 4% COLA": 72.76
+  },
+  "DEPUTY SHERIFF B": {
+    "December 2025 Range Increase": 63.43,
+    "December 2025 10% COLA": 69.77,
+    "December 2026 5% COLA": 73.26,
+    "December 2027 4% COLA": 76.19
+  },
+  "DEPUTY SHERIFF B-84": {
+    "December 2025 Range Increase": 63.43,
+    "December 2025 10% COLA": 69.77,
+    "December 2026 5% COLA": 73.26,
+    "December 2027 4% COLA": 76.19
+  },
+  "CORONER CORPORAL": {
+    "December 2025 Range Increase": 51.55,
+    "December 2025 10% COLA": 56.71,
+    "December 2026 5% COLA": 59.54,
+    "December 2027 4% COLA": 61.92
+  },
+  "CORONER CORPORAL A": {
+    "December 2025 Range Increase": 55.19,
+    "December 2025 10% COLA": 60.71,
+    "December 2026 5% COLA": 63.74,
+    "December 2027 4% COLA": 66.29
+  },
+  "CORONER CORPORAL B": {
+    "December 2025 Range Increase": 57.80,
+    "December 2025 10% COLA": 63.58,
+    "December 2026 5% COLA": 66.76,
+    "December 2027 4% COLA": 69.43
+  },
+  "DEPUTY CORONER I": {
+    "December 2025 Range Increase": 42.23,
+    "December 2025 10% COLA": 46.45,
+    "December 2026 5% COLA": 48.78,
+    "December 2027 4% COLA": 50.73
+  },
+  "DEPUTY CORONER II": {
+    "December 2025 Range Increase": 47.57,
+    "December 2025 10% COLA": 52.33,
+    "December 2026 5% COLA": 54.94,
+    "December 2027 4% COLA": 57.14
+  },
+  "DEPUTY CORONER II-A": {
+    "December 2025 Range Increase": 50.93,
+    "December 2025 10% COLA": 56.02,
+    "December 2026 5% COLA": 58.82,
+    "December 2027 4% COLA": 61.18
+  },
+  "DEPUTY CORONER II-B": {
+    "December 2025 Range Increase": 53.33,
+    "December 2025 10% COLA": 58.66,
+    "December 2026 5% COLA": 61.60,
+    "December 2027 4% COLA": 64.06
+  },
+  "SHERIFF CORPORAL": {
+    "December 2025 Range Increase": 60.24,
+    "December 2025 10% COLA": 66.26,
+    "December 2026 5% COLA": 69.58,
+    "December 2027 4% COLA": 72.36
+  },
+  "SHERIFF CORPORAL-84": {
+    "December 2025 Range Increase": 60.24,
+    "December 2025 10% COLA": 66.26,
+    "December 2026 5% COLA": 69.58,
+    "December 2027 4% COLA": 72.36
+  },
+  "SHERIFF CORPORAL A": {
+    "December 2025 Range Increase": 64.50,
+    "December 2025 10% COLA": 70.95,
+    "December 2026 5% COLA": 74.50,
+    "December 2027 4% COLA": 77.48
+  },
+  "SHERIFF CORPORAL A-84": {
+    "December 2025 Range Increase": 64.50,
+    "December 2025 10% COLA": 70.95,
+    "December 2026 5% COLA": 74.50,
+    "December 2027 4% COLA": 77.48
+  },
+  "SHERIFF CORPORAL B": {
+    "December 2025 Range Increase": 67.54,
+    "December 2025 10% COLA": 74.29,
+    "December 2026 5% COLA": 78.01,
+    "December 2027 4% COLA": 81.13
+  },
+  "SHERIFF CORPORAL B-84": {
+    "December 2025 Range Increase": 67.54,
+    "December 2025 10% COLA": 74.29,
+    "December 2026 5% COLA": 78.01,
+    "December 2027 4% COLA": 81.13
+  },
+  "SHERIFF'S INVESTIGATOR I": {
+    "December 2025 Range Increase": 62.83,
+    "December 2025 10% COLA": 69.11,
+    "December 2026 5% COLA": 72.57,
+    "December 2027 4% COLA": 75.47
+  },
+  "SHERIFF'S INVESTIGATOR I A": {
+    "December 2025 Range Increase": 67.26,
+    "December 2025 10% COLA": 73.99,
+    "December 2026 5% COLA": 77.69,
+    "December 2027 4% COLA": 80.79
+  },
+  "SHERIFF'S INVESTIGATOR I B": {
+    "December 2025 Range Increase": 70.44,
+    "December 2025 10% COLA": 77.48,
+    "December 2026 5% COLA": 81.36,
+    "December 2027 4% COLA": 84.61
+  },
+  "SHERIFF'S INVESTIGATOR II": {
+    "December 2025 Range Increase": 62.83,
+    "December 2025 10% COLA": 69.11,
+    "December 2026 5% COLA": 72.57,
+    "December 2027 4% COLA": 75.47
+  },
+  "SHERIFF'S INVESTIGATOR II A": {
+    "December 2025 Range Increase": 67.26,
+    "December 2025 10% COLA": 73.99,
+    "December 2026 5% COLA": 77.69,
+    "December 2027 4% COLA": 80.79
+  },
+  "SHERIFF'S INVESTIGATOR II B": {
+    "December 2025 Range Increase": 70.44,
+    "December 2025 10% COLA": 77.48,
+    "December 2026 5% COLA": 81.36,
+    "December 2027 4% COLA": 84.61
+  },
+  "SHERIFF'S LEAD INVESTIGATOR III A": {
+    "December 2025 Range Increase": 72.49,
+    "December 2025 10% COLA": 79.74,
+    "December 2026 5% COLA": 83.73,
+    "December 2027 4% COLA": 87.07
+  },
+  "SHERIFF'S LEAD INVESTIGATOR III B": {
+    "December 2025 Range Increase": 75.91,
+    "December 2025 10% COLA": 83.50,
+    "December 2026 5% COLA": 87.68,
+    "December 2027 4% COLA": 91.18
+  },
+  "SHERIFF'S MASTER INVESTIGATOR IV B": {
+    "December 2025 Range Increase": 81.68,
+    "December 2025 10% COLA": 89.85,
+    "December 2026 5% COLA": 94.34,
+    "December 2027 4% COLA": 98.11
+  },
+  "DISTRICT ATTORNEY INVESTIGATOR": {
+    "December 2025 Range Increase": 63.65,
+    "December 2025 10% COLA": 70.02,
+    "December 2026 5% COLA": 73.52,
+    "December 2027 4% COLA": 76.46
+  },
+  "DISTRICT ATTORNEY INVESTIGATOR A": {
+    "December 2025 Range Increase": 68.12,
+    "December 2025 10% COLA": 74.93,
+    "December 2026 5% COLA": 78.68,
+    "December 2027 4% COLA": 81.83
+  },
+  "DISTRICT ATTORNEY INVESTIGATOR B": {
+    "December 2025 Range Increase": 72.32,
+    "December 2025 10% COLA": 79.55,
+    "December 2026 5% COLA": 83.53,
+    "December 2027 4% COLA": 86.87
+  },
+  "SENIOR DISTRICT ATTORNEY INVESTIGATOR": {
+    "December 2025 Range Increase": 69.70,
+    "December 2025 10% COLA": 76.67,
+    "December 2026 5% COLA": 80.50,
+    "December 2027 4% COLA": 83.72
+  },
+  "SENIOR DISTRICT ATTORNEY INVESTIGATOR A": {
+    "December 2025 Range Increase": 74.60,
+    "December 2025 10% COLA": 82.06,
+    "December 2026 5% COLA": 86.16,
+    "December 2027 4% COLA": 89.61
+  },
+  "SENIOR DISTRICT ATTORNEY INVESTIGATOR B": {
+    "December 2025 Range Increase": 78.09,
+    "December 2025 10% COLA": 85.90,
+    "December 2026 5% COLA": 90.19,
+    "December 2027 4% COLA": 93.80
+  },
+  "SENIOR DISTRICT ATTORNEY INVESTIGATOR II": {
+    "December 2025 Range Increase": 73.39,
+    "December 2025 10% COLA": 80.73,
+    "December 2026 5% COLA": 84.77,
+    "December 2027 4% COLA": 88.16
+  },
+  "SENIOR DISTRICT ATTORNEY INVESTIGATOR A-II": {
+    "December 2025 Range Increase": 78.55,
+    "December 2025 10% COLA": 86.41,
+    "December 2026 5% COLA": 90.73,
+    "December 2027 4% COLA": 94.35
+  },
+  "SENIOR DISTRICT ATTORNEY INVESTIGATOR B-II": {
+    "December 2025 Range Increase": 82.23,
+    "December 2025 10% COLA": 90.45,
+    "December 2026 5% COLA": 94.98,
+    "December 2027 4% COLA": 98.77
+  },
+  "SENIOR DISTRICT ATTORNEY INVESTIGATOR B-III": {
+    "December 2025 Range Increase": 86.75,
+    "December 2025 10% COLA": 95.43,
+    "December 2026 5% COLA": 100.20,
+    "December 2027 4% COLA": 104.20
+  },
+  "WELFARE FRAUD INVESTIGATOR": {
+    "December 2025 Range Increase": 52.18,
+    "December 2025 10% COLA": 57.40,
+    "December 2026 5% COLA": 60.27,
+    "December 2027 4% COLA": 62.68
+  },
+  "WELFARE FRAUD INVESTIGATOR-A": {
+    "December 2025 Range Increase": 53.59,
+    "December 2025 10% COLA": 58.95,
+    "December 2026 5% COLA": 61.90,
+    "December 2027 4% COLA": 64.37
+  },
+  "WELFARE FRAUD INVESTIGATOR-B": {
+    "December 2025 Range Increase": 55.03,
+    "December 2025 10% COLA": 60.53,
+    "December 2026 5% COLA": 63.56,
+    "December 2027 4% COLA": 66.10
+  },
+  "SUPERVISING WELFARE FRAUD INVESTIGATOR": {
+    "December 2025 Range Increase": 58.09,
+    "December 2025 10% COLA": 63.90,
+    "December 2026 5% COLA": 67.09,
+    "December 2027 4% COLA": 69.78
+  },
+  "SUPERVISING WELFARE FRAUD INVESTIGATOR-A": {
+    "December 2025 Range Increase": 59.67,
+    "December 2025 10% COLA": 65.64,
+    "December 2026 5% COLA": 68.92,
+    "December 2027 4% COLA": 71.68
+  },
+  "SUPERVISING WELFARE FRAUD INVESTIGATOR-B": {
+    "December 2025 Range Increase": 61.26,
+    "December 2025 10% COLA": 67.39,
+    "December 2026 5% COLA": 70.76,
+    "December 2027 4% COLA": 73.59
+  }
+}

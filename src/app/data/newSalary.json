@@ -20,9 +20,9 @@
   {
     "job_title": "DEPUTY SHERIFF TRAINEE",
     "steps": [
-      { "number": 1, "hourly": 30.76 },
-      { "number": 2, "hourly": 31.99 },
-      { "number": 3, "hourly": 33.27 },
+      { "number": 1, "hourly": 34.38 },
+      { "number": 2, "hourly": 34.38 },
+      { "number": 3, "hourly": 34.38 },
       { "number": 4, "hourly": 34.6 },
       { "number": 5, "hourly": 35.98 },
       { "number": 6, "hourly": 37.42 },
@@ -36,9 +36,9 @@
   {
     "job_title": "DEPUTY SHERIFF",
     "steps": [
-      { "number": 1, "hourly": 33.74 },
-      { "number": 2, "hourly": 35.09 },
-      { "number": 3, "hourly": 36.49 },
+      { "number": 1, "hourly": 37.0 },
+      { "number": 2, "hourly": 37.0 },
+      { "number": 3, "hourly": 37.0 },
       { "number": 4, "hourly": 37.95 },
       { "number": 5, "hourly": 39.47 },
       { "number": 6, "hourly": 41.05 },
@@ -53,9 +53,9 @@
   {
     "job_title": "DEPUTY SHERIFF-84",
     "steps": [
-      { "number": 1, "hourly": 33.74 },
-      { "number": 2, "hourly": 35.09 },
-      { "number": 3, "hourly": 36.49 },
+      { "number": 1, "hourly": 37.0 },
+      { "number": 2, "hourly": 37.0 },
+      { "number": 3, "hourly": 37.0 },
       { "number": 4, "hourly": 37.95 },
       { "number": 5, "hourly": 39.47 },
       { "number": 6, "hourly": 41.05 },
@@ -70,9 +70,9 @@
   {
     "job_title": "DEPUTY SHERIFF A",
     "steps": [
-      { "number": 1, "hourly": 34.73 },
-      { "number": 2, "hourly": 36.12 },
-      { "number": 3, "hourly": 37.56 },
+      { "number": 1, "hourly": 38.09 },
+      { "number": 2, "hourly": 38.09 },
+      { "number": 3, "hourly": 38.09 },
       { "number": 4, "hourly": 39.07 },
       { "number": 5, "hourly": 40.63 },
       { "number": 6, "hourly": 42.25 },
@@ -88,9 +88,9 @@
   {
     "job_title": "DEPUTY SHERIFF A-84",
     "steps": [
-      { "number": 1, "hourly": 34.73 },
-      { "number": 2, "hourly": 36.12 },
-      { "number": 3, "hourly": 37.56 },
+      { "number": 1, "hourly": 38.09 },
+      { "number": 2, "hourly": 38.09 },
+      { "number": 3, "hourly": 38.09 },
       { "number": 4, "hourly": 39.07 },
       { "number": 5, "hourly": 40.63 },
       { "number": 6, "hourly": 42.25 },
@@ -106,9 +106,9 @@
   {
     "job_title": "DEPUTY SHERIFF B",
     "steps": [
-      { "number": 1, "hourly": 36.37 },
-      { "number": 2, "hourly": 37.82 },
-      { "number": 3, "hourly": 39.34 },
+      { "number": 1, "hourly": 39.89 },
+      { "number": 2, "hourly": 39.89 },
+      { "number": 3, "hourly": 39.89 },
       { "number": 4, "hourly": 40.91 },
       { "number": 5, "hourly": 42.55 },
       { "number": 6, "hourly": 44.25 },
@@ -124,9 +124,9 @@
   {
     "job_title": "DEPUTY SHERIFF B-84",
     "steps": [
-      { "number": 1, "hourly": 36.37 },
-      { "number": 2, "hourly": 37.82 },
-      { "number": 3, "hourly": 39.34 },
+      { "number": 1, "hourly": 39.89 },
+      { "number": 2, "hourly": 39.89 },
+      { "number": 3, "hourly": 39.89 },
       { "number": 4, "hourly": 40.91 },
       { "number": 5, "hourly": 42.55 },
       { "number": 6, "hourly": 44.25 },
@@ -142,8 +142,8 @@
   {
     "job_title": "CORONER CORPORAL",
     "steps": [
-      { "number": 1, "hourly": 32.41 },
-      { "number": 2, "hourly": 33.71 },
+      { "number": 1, "hourly": 34.87 },
+      { "number": 2, "hourly": 34.87 },
       { "number": 3, "hourly": 35.05 },
       { "number": 4, "hourly": 36.46 },
       { "number": 5, "hourly": 37.92 },
@@ -160,8 +160,8 @@
   {
     "job_title": "CORONER CORPORAL A",
     "steps": [
-      { "number": 1, "hourly": 34.7 },
-      { "number": 2, "hourly": 36.09 },
+      { "number": 1, "hourly": 37.32 },
+      { "number": 2, "hourly": 37.32 },
       { "number": 3, "hourly": 37.53 },
       { "number": 4, "hourly": 39.03 },
       { "number": 5, "hourly": 40.59 },
@@ -178,8 +178,8 @@
   {
     "job_title": "CORONER CORPORAL B",
     "steps": [
-      { "number": 1, "hourly": 36.34 },
-      { "number": 2, "hourly": 37.79 },
+      { "number": 1, "hourly": 39.07 },
+      { "number": 2, "hourly": 39.07 },
       { "number": 3, "hourly": 39.31 },
       { "number": 4, "hourly": 40.88 },
       { "number": 5, "hourly": 42.51 },
@@ -196,9 +196,9 @@
   {
     "job_title": "DEPUTY CORONER I",
     "steps": [
-      { "number": 1, "hourly": 26.03 },
-      { "number": 2, "hourly": 27.07 },
-      { "number": 3, "hourly": 28.15 },
+      { "number": 1, "hourly": 29.18 },
+      { "number": 2, "hourly": 29.18 },
+      { "number": 3, "hourly": 29.18 },
       { "number": 4, "hourly": 29.28 },
       { "number": 5, "hourly": 30.45 },
       { "number": 6, "hourly": 31.67 },
@@ -214,8 +214,8 @@
   {
     "job_title": "DEPUTY CORONER II",
     "steps": [
-      { "number": 1, "hourly": 29.91 },
-      { "number": 2, "hourly": 31.11 },
+      { "number": 1, "hourly": 32.31 },
+      { "number": 2, "hourly": 32.31 },
       { "number": 3, "hourly": 32.35 },
       { "number": 4, "hourly": 33.64 },
       { "number": 5, "hourly": 34.99 },
@@ -232,8 +232,8 @@
   {
     "job_title": "DEPUTY CORONER II-A",
     "steps": [
-      { "number": 1, "hourly": 32.03 },
-      { "number": 2, "hourly": 33.31 },
+      { "number": 1, "hourly": 34.58 },
+      { "number": 2, "hourly": 34.58 },
       { "number": 3, "hourly": 34.64 },
       { "number": 4, "hourly": 36.03 },
       { "number": 5, "hourly": 37.47 },
@@ -250,8 +250,8 @@
   {
     "job_title": "DEPUTY CORONER II-B",
     "steps": [
-      { "number": 1, "hourly": 33.54 },
-      { "number": 2, "hourly": 34.88 },
+      { "number": 1, "hourly": 36.2 },
+      { "number": 2, "hourly": 36.2 },
       { "number": 3, "hourly": 36.28 },
       { "number": 4, "hourly": 37.73 },
       { "number": 5, "hourly": 39.24 },
@@ -268,9 +268,9 @@
   {
     "job_title": "SHERIFF CORPORAL",
     "steps": [
-      { "number": 1, "hourly": 34.56 },
-      { "number": 2, "hourly": 35.94 },
-      { "number": 3, "hourly": 37.38 },
+      { "number": 1, "hourly": 37.9 },
+      { "number": 2, "hourly": 37.9 },
+      { "number": 3, "hourly": 37.9 },
       { "number": 4, "hourly": 38.88 },
       { "number": 5, "hourly": 40.43 },
       { "number": 6, "hourly": 42.05 },
@@ -286,9 +286,9 @@
   {
     "job_title": "SHERIFF CORPORAL-84",
     "steps": [
-      { "number": 1, "hourly": 34.56 },
-      { "number": 2, "hourly": 35.94 },
-      { "number": 3, "hourly": 37.38 },
+      { "number": 1, "hourly": 37.9 },
+      { "number": 2, "hourly": 37.9 },
+      { "number": 3, "hourly": 37.9 },
       { "number": 4, "hourly": 38.88 },
       { "number": 5, "hourly": 40.43 },
       { "number": 6, "hourly": 42.05 },
@@ -304,9 +304,9 @@
   {
     "job_title": "SHERIFF CORPORAL A",
     "steps": [
-      { "number": 1, "hourly": 38.47 },
-      { "number": 2, "hourly": 40.01 },
-      { "number": 3, "hourly": 41.61 },
+      { "number": 1, "hourly": 42.19 },
+      { "number": 2, "hourly": 42.19 },
+      { "number": 3, "hourly": 42.19 },
       { "number": 4, "hourly": 43.27 },
       { "number": 5, "hourly": 45.0 },
       { "number": 6, "hourly": 46.8 },
@@ -321,9 +321,9 @@
   {
     "job_title": "SHERIFF CORPORAL A-84",
     "steps": [
-      { "number": 1, "hourly": 38.47 },
-      { "number": 2, "hourly": 40.01 },
-      { "number": 3, "hourly": 41.61 },
+      { "number": 1, "hourly": 42.19 },
+      { "number": 2, "hourly": 42.19 },
+      { "number": 3, "hourly": 42.19 },
       { "number": 4, "hourly": 43.27 },
       { "number": 5, "hourly": 45.0 },
       { "number": 6, "hourly": 46.8 },
@@ -338,9 +338,9 @@
   {
     "job_title": "SHERIFF CORPORAL B",
     "steps": [
-      { "number": 1, "hourly": 40.29 },
-      { "number": 2, "hourly": 41.9 },
-      { "number": 3, "hourly": 43.58 },
+      { "number": 1, "hourly": 44.18 },
+      { "number": 2, "hourly": 44.18 },
+      { "number": 3, "hourly": 44.18 },
       { "number": 4, "hourly": 45.32 },
       { "number": 5, "hourly": 47.13 },
       { "number": 6, "hourly": 49.02 },
@@ -355,9 +355,9 @@
   {
     "job_title": "SHERIFF CORPORAL B-84",
     "steps": [
-      { "number": 1, "hourly": 40.29 },
-      { "number": 2, "hourly": 41.9 },
-      { "number": 3, "hourly": 43.58 },
+      { "number": 1, "hourly": 44.18 },
+      { "number": 2, "hourly": 44.18 },
+      { "number": 3, "hourly": 44.18 },
       { "number": 4, "hourly": 45.32 },
       { "number": 5, "hourly": 47.13 },
       { "number": 6, "hourly": 49.02 },
@@ -372,9 +372,9 @@
   {
     "job_title": "SHERIFF'S INVESTIGATOR I",
     "steps": [
-      { "number": 1, "hourly": 36.02 },
-      { "number": 2, "hourly": 37.46 },
-      { "number": 3, "hourly": 38.96 },
+      { "number": 1, "hourly": 39.5 },
+      { "number": 2, "hourly": 39.5 },
+      { "number": 3, "hourly": 39.5 },
       { "number": 4, "hourly": 40.52 },
       { "number": 5, "hourly": 42.14 },
       { "number": 6, "hourly": 43.82 },
@@ -390,9 +390,9 @@
   {
     "job_title": "SHERIFF'S INVESTIGATOR I A",
     "steps": [
-      { "number": 1, "hourly": 40.11 },
-      { "number": 2, "hourly": 41.71 },
-      { "number": 3, "hourly": 43.38 },
+      { "number": 1, "hourly": 43.98 },
+      { "number": 2, "hourly": 43.98 },
+      { "number": 3, "hourly": 43.98 },
       { "number": 4, "hourly": 45.12 },
       { "number": 5, "hourly": 46.92 },
       { "number": 6, "hourly": 48.8 },
@@ -407,9 +407,9 @@
   {
     "job_title": "SHERIFF'S INVESTIGATOR I B",
     "steps": [
-      { "number": 1, "hourly": 40.38 },
-      { "number": 2, "hourly": 42.0 },
-      { "number": 3, "hourly": 43.68 },
+      { "number": 1, "hourly": 44.29 },
+      { "number": 2, "hourly": 44.29 },
+      { "number": 3, "hourly": 44.29 },
       { "number": 4, "hourly": 45.42 },
       { "number": 5, "hourly": 47.24 },
       { "number": 6, "hourly": 49.13 },
@@ -425,9 +425,9 @@
   {
     "job_title": "SHERIFF'S INVESTIGATOR II",
     "steps": [
-      { "number": 1, "hourly": 36.02 },
-      { "number": 2, "hourly": 37.46 },
-      { "number": 3, "hourly": 38.96 },
+      { "number": 1, "hourly": 39.5 },
+      { "number": 2, "hourly": 39.5 },
+      { "number": 3, "hourly": 39.5 },
       { "number": 4, "hourly": 40.52 },
       { "number": 5, "hourly": 42.14 },
       { "number": 6, "hourly": 43.82 },
@@ -443,9 +443,9 @@
   {
     "job_title": "SHERIFF'S INVESTIGATOR II A",
     "steps": [
-      { "number": 1, "hourly": 40.11 },
-      { "number": 2, "hourly": 41.71 },
-      { "number": 3, "hourly": 43.38 },
+      { "number": 1, "hourly": 43.98 },
+      { "number": 2, "hourly": 43.98 },
+      { "number": 3, "hourly": 43.98 },
       { "number": 4, "hourly": 45.12 },
       { "number": 5, "hourly": 46.92 },
       { "number": 6, "hourly": 48.8 },
@@ -460,9 +460,9 @@
   {
     "job_title": "SHERIFF'S INVESTIGATOR II B",
     "steps": [
-      { "number": 1, "hourly": 40.38 },
-      { "number": 2, "hourly": 42.0 },
-      { "number": 3, "hourly": 43.68 },
+      { "number": 1, "hourly": 44.29 },
+      { "number": 2, "hourly": 44.29 },
+      { "number": 3, "hourly": 44.29 },
       { "number": 4, "hourly": 45.42 },
       { "number": 5, "hourly": 47.24 },
       { "number": 6, "hourly": 49.13 },
@@ -478,9 +478,9 @@
   {
     "job_title": "SHERIFF'S LEAD INVESTIGATOR III A",
     "steps": [
-      { "number": 1, "hourly": 40.48 },
-      { "number": 2, "hourly": 42.1 },
-      { "number": 3, "hourly": 43.78 },
+      { "number": 1, "hourly": 44.39 },
+      { "number": 2, "hourly": 44.39 },
+      { "number": 3, "hourly": 44.39 },
       { "number": 4, "hourly": 45.53 },
       { "number": 5, "hourly": 47.36 },
       { "number": 6, "hourly": 49.25 },
@@ -497,9 +497,9 @@
   {
     "job_title": "SHERIFF'S LEAD INVESTIGATOR III B",
     "steps": [
-      { "number": 1, "hourly": 42.39 },
-      { "number": 2, "hourly": 44.09 },
-      { "number": 3, "hourly": 45.85 },
+      { "number": 1, "hourly": 46.48 },
+      { "number": 2, "hourly": 46.48 },
+      { "number": 3, "hourly": 46.48 },
       { "number": 4, "hourly": 47.68 },
       { "number": 5, "hourly": 49.59 },
       { "number": 6, "hourly": 51.57 },
@@ -509,16 +509,15 @@
       { "number": 10, "hourly": 60.33 },
       { "number": 11, "hourly": 62.75 },
       { "number": 12, "hourly": 65.26 },
-      { "number": 13, "hourly": 67.87 },
-      { "number": 14, "hourly": 69.22 }
+      { "number": 13, "hourly": 67.87 }
     ]
   },
   {
     "job_title": "SHERIFF'S MASTER INVESTIGATOR IV B",
     "steps": [
-      { "number": 1, "hourly": 50.02 },
-      { "number": 2, "hourly": 52.02 },
-      { "number": 3, "hourly": 54.1 },
+      { "number": 1, "hourly": 54.86 },
+      { "number": 2, "hourly": 54.86 },
+      { "number": 3, "hourly": 54.86 },
       { "number": 4, "hourly": 56.27 },
       { "number": 5, "hourly": 58.52 },
       { "number": 6, "hourly": 60.86 },
@@ -533,11 +532,11 @@
   {
     "job_title": "DISTRICT ATTORNEY INVESTIGATOR",
     "steps": [
-      { "number": 1, "hourly": 36.02 },
-      { "number": 2, "hourly": 37.46 },
-      { "number": 3, "hourly": 38.96 },
-      { "number": 4, "hourly": 40.52 },
-      { "number": 5, "hourly": 42.14 },
+      { "number": 1, "hourly": 43.07 },
+      { "number": 2, "hourly": 43.07 },
+      { "number": 3, "hourly": 43.07 },
+      { "number": 4, "hourly": 43.07 },
+      { "number": 5, "hourly": 43.07 },
       { "number": 6, "hourly": 43.82 },
       { "number": 7, "hourly": 45.58 },
       { "number": 8, "hourly": 47.4 },
@@ -551,11 +550,11 @@
   {
     "job_title": "DISTRICT ATTORNEY INVESTIGATOR A",
     "steps": [
-      { "number": 1, "hourly": 40.11 },
-      { "number": 2, "hourly": 41.71 },
-      { "number": 3, "hourly": 43.38 },
-      { "number": 4, "hourly": 45.12 },
-      { "number": 5, "hourly": 46.92 },
+      { "number": 1, "hourly": 47.1 },
+      { "number": 2, "hourly": 47.1 },
+      { "number": 3, "hourly": 47.1 },
+      { "number": 4, "hourly": 47.1 },
+      { "number": 5, "hourly": 47.1 },
       { "number": 6, "hourly": 48.8 },
       { "number": 7, "hourly": 50.75 },
       { "number": 8, "hourly": 52.78 },
@@ -568,12 +567,12 @@
   {
     "job_title": "DISTRICT ATTORNEY INVESTIGATOR B",
     "steps": [
-      { "number": 1, "hourly": 40.38 },
-      { "number": 2, "hourly": 42.0 },
-      { "number": 3, "hourly": 43.68 },
-      { "number": 4, "hourly": 45.42 },
-      { "number": 5, "hourly": 47.24 },
-      { "number": 6, "hourly": 49.13 },
+      { "number": 1, "hourly": 49.65 },
+      { "number": 2, "hourly": 49.65 },
+      { "number": 3, "hourly": 49.65 },
+      { "number": 4, "hourly": 49.65 },
+      { "number": 5, "hourly": 49.65 },
+      { "number": 6, "hourly": 49.65 },
       { "number": 7, "hourly": 51.09 },
       { "number": 8, "hourly": 53.14 },
       { "number": 9, "hourly": 55.26 },
@@ -586,9 +585,9 @@
   {
     "job_title": "SENIOR DISTRICT ATTORNEY INVESTIGATOR",
     "steps": [
-      { "number": 1, "hourly": 43.29 },
-      { "number": 2, "hourly": 45.02 },
-      { "number": 3, "hourly": 46.82 },
+      { "number": 1, "hourly": 48.6 },
+      { "number": 2, "hourly": 48.6 },
+      { "number": 3, "hourly": 48.6 },
       { "number": 4, "hourly": 48.7 },
       { "number": 5, "hourly": 50.64 },
       { "number": 6, "hourly": 52.67 },
@@ -603,10 +602,10 @@
   {
     "job_title": "SENIOR DISTRICT ATTORNEY INVESTIGATOR A",
     "steps": [
-      { "number": 1, "hourly": 44.57 },
-      { "number": 2, "hourly": 46.35 },
-      { "number": 3, "hourly": 48.21 },
-      { "number": 4, "hourly": 50.14 },
+      { "number": 1, "hourly": 51.04 },
+      { "number": 2, "hourly": 51.04 },
+      { "number": 3, "hourly": 51.04 },
+      { "number": 4, "hourly": 51.04 },
       { "number": 5, "hourly": 52.14 },
       { "number": 6, "hourly": 54.23 },
       { "number": 7, "hourly": 56.4 },
@@ -621,10 +620,10 @@
   {
     "job_title": "SENIOR DISTRICT ATTORNEY INVESTIGATOR B",
     "steps": [
-      { "number": 1, "hourly": 46.67 },
-      { "number": 2, "hourly": 48.54 },
-      { "number": 3, "hourly": 50.48 },
-      { "number": 4, "hourly": 52.5 },
+      { "number": 1, "hourly": 53.44 },
+      { "number": 2, "hourly": 53.44 },
+      { "number": 3, "hourly": 53.44 },
+      { "number": 4, "hourly": 53.44 },
       { "number": 5, "hourly": 54.6 },
       { "number": 6, "hourly": 56.78 },
       { "number": 7, "hourly": 59.05 },
@@ -639,10 +638,10 @@
   {
     "job_title": "SENIOR DISTRICT ATTORNEY INVESTIGATOR II",
     "steps": [
-      { "number": 1, "hourly": 43.69 },
-      { "number": 2, "hourly": 45.44 },
-      { "number": 3, "hourly": 47.26 },
-      { "number": 4, "hourly": 49.15 },
+      { "number": 1, "hourly": 50.18 },
+      { "number": 2, "hourly": 50.18 },
+      { "number": 3, "hourly": 50.18 },
+      { "number": 4, "hourly": 50.18 },
       { "number": 5, "hourly": 51.11 },
       { "number": 6, "hourly": 53.16 },
       { "number": 7, "hourly": 55.28 },
@@ -657,10 +656,10 @@
   {
     "job_title": "SENIOR DISTRICT ATTORNEY INVESTIGATOR A-II",
     "steps": [
-      { "number": 1, "hourly": 46.77 },
-      { "number": 2, "hourly": 48.64 },
-      { "number": 3, "hourly": 50.59 },
-      { "number": 4, "hourly": 52.61 },
+      { "number": 1, "hourly": 53.71 },
+      { "number": 2, "hourly": 53.71 },
+      { "number": 3, "hourly": 53.71 },
+      { "number": 4, "hourly": 53.71 },
       { "number": 5, "hourly": 54.71 },
       { "number": 6, "hourly": 56.9 },
       { "number": 7, "hourly": 59.18 },
@@ -675,10 +674,10 @@
   {
     "job_title": "SENIOR DISTRICT ATTORNEY INVESTIGATOR B-II",
     "steps": [
-      { "number": 1, "hourly": 50.94 },
-      { "number": 2, "hourly": 52.98 },
-      { "number": 3, "hourly": 55.1 },
-      { "number": 4, "hourly": 57.3 },
+      { "number": 1, "hourly": 57.32 },
+      { "number": 2, "hourly": 57.32 },
+      { "number": 3, "hourly": 57.32 },
+      { "number": 4, "hourly": 57.32 },
       { "number": 5, "hourly": 59.59 },
       { "number": 6, "hourly": 61.98 },
       { "number": 7, "hourly": 64.46 },
@@ -692,10 +691,10 @@
   {
     "job_title": "SENIOR DISTRICT ATTORNEY INVESTIGATOR B-III",
     "steps": [
-      { "number": 1, "hourly": 51.67 },
-      { "number": 2, "hourly": 53.74 },
-      { "number": 3, "hourly": 55.89 },
-      { "number": 4, "hourly": 58.12 },
+      { "number": 1, "hourly": 59.32 },
+      { "number": 2, "hourly": 59.32 },
+      { "number": 3, "hourly": 59.32 },
+      { "number": 4, "hourly": 59.32 },
       { "number": 5, "hourly": 60.45 },
       { "number": 6, "hourly": 62.86 },
       { "number": 7, "hourly": 65.38 },
@@ -710,10 +709,10 @@
   {
     "job_title": "WELFARE FRAUD INVESTIGATOR",
     "steps": [
-      { "number": 1, "hourly": 26.32 },
-      { "number": 2, "hourly": 27.37 },
-      { "number": 3, "hourly": 28.47 },
-      { "number": 4, "hourly": 29.61 },
+      { "number": 1, "hourly": 30.32 },
+      { "number": 2, "hourly": 30.32 },
+      { "number": 3, "hourly": 30.32 },
+      { "number": 4, "hourly": 30.32 },
       { "number": 5, "hourly": 30.79 },
       { "number": 6, "hourly": 32.02 },
       { "number": 7, "hourly": 33.3 },
@@ -782,9 +781,9 @@
   {
     "job_title": "SUPERVISING WELFARE FRAUD INVESTIGATOR",
     "steps": [
-      { "number": 1, "hourly": 28.55 },
-      { "number": 2, "hourly": 29.69 },
-      { "number": 3, "hourly": 30.88 },
+      { "number": 1, "hourly": 31.8 },
+      { "number": 2, "hourly": 31.8 },
+      { "number": 3, "hourly": 31.8 },
       { "number": 4, "hourly": 32.11 },
       { "number": 5, "hourly": 33.4 },
       { "number": 6, "hourly": 34.74 },

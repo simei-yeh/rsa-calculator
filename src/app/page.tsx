@@ -3,7 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import data from "./data/currentSalary.json";
+import current from "./data/currentSalary.json";
+import newS from "./data/currentSalary.json";
+import maxSals from "./data/maxSalary.json";
 
 interface Step {
   number: number; // The step number
@@ -15,18 +17,28 @@ interface JobTitle {
   steps: Step[];     // An array of steps associated with the job
 }
 
+interface ColaRates {
+  [key: string]: number; // Key is the COLA description, value is the amount
+}
+
+interface JobTitleRates {
+  [jobTitle: string]: ColaRates; // Key is the job title, value is an object of COLA rates
+}
+
 const CALCULATED_RATES = [
-  "Dec 2025 Range Increase",
-  "December 2025 10% COLA",
-  "Next Anniversary",
-  "December 2026 5% COLA",
-  "Next Anniversary",
-  "December 2027 4% COLA",
-  "Next Anniversary"
+  {title: "Dec 2025 Range Increase", amt: 1.0, maxAmt: "December 2025 Range Increase",},
+  {title: "December 2025 10% COLA", amt: 1.1, maxAmt: "December 2025 10% COLA",},
+  {title: "Next Anniversary", amt: 1.04, maxAmt: "December 2025 10% COLA",},
+  {title: "December 2026 5% COLA", amt: 1.05, maxAmt: "December 2026 5% COLA",}, 
+  {title: "Next Anniversary", amt: 1.04, maxAmt: "December 2026 5% COLA",},
+  {title: "December 2027 4% COLA", amt: 1.04, maxAmt: "December 2027 4% COLA",}, 
+  {title: "Next Anniversary", amt: 1.04, maxAmt: "December 2027 4% COLA",},
 ];
 
 export default function Home() {
-  const currentSalary: JobTitle[] = data;
+  const currentSalary: JobTitle[] = current;
+  const newSalary: JobTitle[] = newS;
+  const maxSalary: JobTitleRates = maxSals;
   const [jobTitle, setJobTitle] = useState<JobTitle | null>(null);
   const [selectedStep, setSelectedStep] = useState<Step | null>(null);
 
@@ -40,6 +52,32 @@ export default function Home() {
     const stepNumber = Number(e.target.value);
     const selectedStep = jobTitle?.steps.find(step => step.number === stepNumber) || null;
     setSelectedStep(selectedStep);
+  };
+
+  const calculateMax = (title: string) => {
+    if (!selectedStep) return "N/A";
+
+    const foundJob = newSalary.find(job => job.job_title === jobTitle?.job_title);
+    const baseSalary = foundJob?.steps.find(step => step.number === selectedStep.number)?.hourly || 0;
+    const index = CALCULATED_RATES.findIndex(rate => rate.title === title);
+    
+    if (index === -1) return "N/A"; // If the title is not found
+
+    // Calculate cumulative multiplier up to the index
+    let baseAmount = baseSalary;
+    for (let i = 0; i <= index; i++) {
+      baseAmount *= CALCULATED_RATES[i].amt;
+    }
+
+    let maxAmount = jobTitle ? maxSalary[jobTitle.job_title] : null;
+    const maxTitle = CALCULATED_RATES[index]?.maxAmt;
+    let salaryCap = maxTitle && maxAmount ? maxAmount[maxTitle] : 0;
+
+    if (title === "December 2025 Range Increase") return salaryCap.toFixed(2);
+
+    const finalAmount = Math.min(salaryCap, baseAmount);
+
+    return finalAmount.toFixed(2); // Return the calculated max amount formatted to two decimal places
   };
 
   return (
@@ -83,13 +121,14 @@ export default function Home() {
           </div>
         )}
 
-        <div className="border-2 flex gap-4 items-center flex-col sm:flex-row">
-          {CALCULATED_RATES.map((rate, index) => (
-            <div key={index}>{rate}</div>
+        <div className="border-2 flex gap-4 items-start p-4">
+        {CALCULATED_RATES.map(rate => (
+            <div key={`${rate.title}-${rate.maxAmt}`}>
+              <div>{rate.title}</div>
+              <div>{calculateMax(rate.title)}</div>
+            </div>
           ))}
         </div>
-
-
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
