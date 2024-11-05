@@ -1,0 +1,88 @@
+[
+  {
+    "job_title": "Court Deputy",
+    "steps": [
+      { "number": 1, "hourly": 27.05 },
+      { "number": 2, "hourly": 28.13 },
+      { "number": 3, "hourly": 29.26 },
+      { "number": 4, "hourly": 30.43 },
+      { "number": 5, "hourly": 31.64 },
+      { "number": 6, "hourly": 32.91 },
+      { "number": 7, "hourly": 34.23 },
+      { "number": 8, "hourly": 35.60 },
+      { "number": 9, "hourly": 37.02 },
+      { "number": 10, "hourly": 38.50 },
+      { "number": 11, "hourly": 40.04 },
+      { "number": 12, "hourly": 41.64 },
+      { "number": 13, "hourly": 43.02 }
+    ]
+  },
+  {
+    "job_title": "Deputy Sheriff Trainee",
+    "steps": [
+      { "number": 1, "hourly": 30.76 },
+      { "number": 2, "hourly": 31.99 },
+      { "number": 3, "hourly": 33.27 },
+      { "number": 4, "hourly": 34.60 },
+      { "number": 5, "hourly": 35.98 },
+      { "number": 6, "hourly": 37.42 },
+      { "number": 7, "hourly": 38.92 },
+      { "number": 8, "hourly": 40.48 },
+      { "number": 9, "hourly": 42.10 },
+      { "number": 10, "hourly": 43.78 },
+      { "number": 11, "hourly": 45.12 }
+    ]
+  },
+  {
+    "job_title": "Deputy Sheriff",
+    "steps": [
+      { "number": 1, "hourly": 33.74 },
+      { "number": 2, "hourly": 35.09 },
+      { "number": 3, "hourly": 36.49 },
+      { "number": 4, "hourly": 37.95 },
+      { "number": 5, "hourly": 39.47 },
+      { "number": 6, "hourly": 41.05 },
+      { "number": 7, "hourly": 42.69 },
+      { "number": 8, "hourly": 44.40 },
+      { "number": 9, "hourly": 46.18 },
+      { "number": 10, "hourly": 48.02 },
+      { "number": 11, "hourly": 49.94 },
+      { "number": 12, "hourly": 51.59 }
+    ]
+  },
+  {
+    "job_title": "Deputy Sheriff-84",
+    "steps": [
+      { "number": 1, "hourly": 33.74 },
+      { "number": 2, "hourly": 35.09 },
+      { "number": 3, "hourly": 36.49 },
+      { "number": 4, "hourly": 37.95 },
+      { "number": 5, "hourly": 39.47 },
+      { "number": 6, "hourly": 41.05 },
+      { "number": 7, "hourly": 42.69 },
+      { "number": 8, "hourly": 44.40 },
+      { "number": 9, "hourly": 46.18 },
+      { "number": 10, "hourly": 48.02 },
+      { "number": 11, "hourly": 49.94 },
+      { "number": 12, "hourly": 51.59 }
+    ]
+  },
+  {
+    "job_title": "Deputy Sheriff A",
+    "steps": [
+      { "number": 1, "hourly": 34.73 },
+      { "number": 2, "hourly": 36.12 },
+      { "number": 3, "hourly": 37.56 },
+      { "number": 4, "hourly": 39.07 },
+      { "number": 5, "hourly": 40.63 },
+      { "number": 6, "hourly": 42.25 },
+      { "number": 7, "hourly": 43.94 },
+      { "number": 8, "hourly": 45.70 },
+      { "number": 9, "hourly": 47.53 },
+      { "number": 10, "hourly": 49.43 },
+      { "number": 11, "hourly": 51.41 },
+      { "number": 12, "hourly": 53.47 },
+      { "number": 13, "hourly": 55.23 }
+    ]
+  }
+]
