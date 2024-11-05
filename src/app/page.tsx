@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 
 import data from "./data/currentSalary.json";
@@ -26,7 +26,7 @@ const CALCULATED_RATES = [
 ];
 
 export default function Home() {
-  const [currentSalary, setCurrentSalary] = useState<JobTitle[]>(data);
+  const currentSalary: JobTitle[] = data;
   const [jobTitle, setJobTitle] = useState<JobTitle | null>(null);
   const [selectedStep, setSelectedStep] = useState<Step | null>(null);
 
