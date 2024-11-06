@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 
 import current from "./data/currentSalary.json";
 import newS from "./data/currentSalary.json";
@@ -23,12 +22,6 @@ interface ColaRates {
 
 interface JobTitleRates {
   [jobTitle: string]: ColaRates; // Key is the job title, value is an object of COLA rates
-}
-
-interface Calculataions {
-  finalAmount: number,
-  percentageIncrease: number,
-  cumulativePercentage: number,
 }
 
 const CALCULATED_RATES = [
@@ -87,9 +80,9 @@ export default function Home() {
       console.log('base', baseAmount); // Log the base amount to see how it's changing
     }
 
-    let maxAmount = jobTitle ? maxSalary[jobTitle.job_title] : null;
+    const maxAmount = jobTitle ? maxSalary[jobTitle.job_title] : null;
     const maxTitle = CALCULATED_RATES[index]?.maxAmt;
-    let salaryCap = maxTitle && maxAmount ? maxAmount[maxTitle] : 0;
+    const salaryCap = maxTitle && maxAmount ? maxAmount[maxTitle] : 0;
 
     // Specific handling for "December 2025 Range Increase"
     if (title === "December 2025 Range Increase") {
@@ -161,7 +154,7 @@ export default function Home() {
         )}
 
 <div className="grid grid-cols-7">
-  {CALCULATED_RATES.map((rate, index) => {
+  {CALCULATED_RATES.map((rate) => {
     const { finalAmount, percentageIncrease, cumulativePercentage } = calculateMax(rate.title);
     return (
       <div key={`${rate.title}-${rate.maxAmt}`} className="p-4 border text-center">
