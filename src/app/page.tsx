@@ -25,14 +25,20 @@ interface JobTitleRates {
   [jobTitle: string]: ColaRates; // Key is the job title, value is an object of COLA rates
 }
 
+interface Calculataions {
+  finalAmount: number,
+  percentageIncrease: number,
+  cumulativePercentage: number,
+}
+
 const CALCULATED_RATES = [
-  {title: "Dec 2025 Range Increase", amt: 1.0, maxAmt: "December 2025 Range Increase",},
+  {title: "Dec 2025 Range Increase", amt: 1.0, maxAmt: "December 2025 Range Increase", },
   {title: "December 2025 10% COLA", amt: 1.1, maxAmt: "December 2025 10% COLA",},
-  {title: "Next Anniversary", amt: 1.04, maxAmt: "December 2025 10% COLA",},
-  {title: "December 2026 5% COLA", amt: 1.05, maxAmt: "December 2026 5% COLA",}, 
-  {title: "Next Anniversary", amt: 1.04, maxAmt: "December 2026 5% COLA",},
-  {title: "December 2027 4% COLA", amt: 1.04, maxAmt: "December 2027 4% COLA",}, 
-  {title: "Next Anniversary", amt: 1.04, maxAmt: "December 2027 4% COLA",},
+  {title: "Next Anniversary 2025", amt: 1.04, maxAmt: "December 2025 10% COLA",},
+  {title: "December 2026 5% COLA", amt: 1.05, maxAmt: "December 2026 5% COLA",},
+  {title: "Next Anniversary 2026", amt: 1.04, maxAmt: "December 2026 5% COLA",},
+  {title: "December 2027 4% COLA", amt: 1.04, maxAmt: "December 2027 4% COLA",},
+  {title: "Next Anniversary 2027", amt: 1.04, maxAmt: "December 2027 4% COLA",},
 ];
 
 export default function Home() {
@@ -55,29 +61,62 @@ export default function Home() {
   };
 
   const calculateMax = (title: string) => {
-    if (!selectedStep) return "N/A";
+    if (!selectedStep) return {
+      finalAmount: "N/A",
+      percentageIncrease: "N/A",
+      cumulativePercentage: "N/A"
+    };
 
+    const originalSalary = selectedStep?.hourly;
     const foundJob = newSalary.find(job => job.job_title === jobTitle?.job_title);
     const baseSalary = foundJob?.steps.find(step => step.number === selectedStep.number)?.hourly || 0;
     const index = CALCULATED_RATES.findIndex(rate => rate.title === title);
-    
-    if (index === -1) return "N/A"; // If the title is not found
 
-    // Calculate cumulative multiplier up to the index
+    if (index === -1) return {
+      finalAmount: "N/A",
+      percentageIncrease: "N/A",
+      cumulativePercentage: "N/A"
+    };
+
+    // Calculate cumulative multiplier up to the current index
     let baseAmount = baseSalary;
+    let cumulativePercentage = 0;
+
     for (let i = 0; i <= index; i++) {
       baseAmount *= CALCULATED_RATES[i].amt;
+      console.log('base', baseAmount); // Log the base amount to see how it's changing
     }
 
     let maxAmount = jobTitle ? maxSalary[jobTitle.job_title] : null;
     const maxTitle = CALCULATED_RATES[index]?.maxAmt;
     let salaryCap = maxTitle && maxAmount ? maxAmount[maxTitle] : 0;
 
-    if (title === "December 2025 Range Increase") return salaryCap.toFixed(2);
+    // Specific handling for "December 2025 Range Increase"
+    if (title === "December 2025 Range Increase") {
+      return {
+        finalAmount: salaryCap.toFixed(2),
+        percentageIncrease: "N/A", // Adjusting the increase for this specific case
+        cumulativePercentage: "N/A"
+      };
+    }
 
     const finalAmount = Math.min(salaryCap, baseAmount);
 
-    return finalAmount.toFixed(2); // Return the calculated max amount formatted to two decimal places
+    // Calculate percentage increase between current and previous final amounts
+    let percentageIncrease = "N/A";
+    if (index > 0) {
+      const prevFinalAmount = calculateMax(CALCULATED_RATES[index - 1].title).finalAmount; // Calculate for the previous index
+      percentageIncrease = prevFinalAmount !== "N/A" ? ((finalAmount - parseFloat(prevFinalAmount)) / parseFloat(prevFinalAmount) * 100).toFixed(2) : "N/A";
+    }
+
+    // Calculate the cumulative percentage increase
+    cumulativePercentage = ((finalAmount - originalSalary) / originalSalary) * 100;
+
+    return {
+      finalAmount: finalAmount.toFixed(2),
+      percentageIncrease: percentageIncrease,
+      cumulativePercentage: cumulativePercentage.toFixed(2)
+    };
   };
 
   return (
@@ -121,61 +160,24 @@ export default function Home() {
           </div>
         )}
 
-        <div className="border-2 flex gap-4 items-start p-4">
-        {CALCULATED_RATES.map(rate => (
-            <div key={`${rate.title}-${rate.maxAmt}`}>
-              <div>{rate.title}</div>
-              <div>{calculateMax(rate.title)}</div>
-            </div>
-          ))}
+<div className="grid grid-cols-7">
+  {CALCULATED_RATES.map((rate, index) => {
+    const { finalAmount, percentageIncrease, cumulativePercentage } = calculateMax(rate.title);
+    return (
+      <div key={`${rate.title}-${rate.maxAmt}`} className="p-4 border text-center">
+        <div className="border-b-2 pb-2 mb-2 h-1/3">{rate.title}</div>
+        <div className="grid-rows-4">
+        <div><span className="font-semibold">Final Amount:</span> ${finalAmount}</div>
+        <div><span className="font-semibold">%age Increase:</span> {percentageIncrease}%</div>
+        <div><span className="font-semibold">Cumulative %age Increase</span> {cumulativePercentage}%</div>
         </div>
+      </div>
+    );
+  })}
+</div>
+
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
       </footer>
     </div>
   );
