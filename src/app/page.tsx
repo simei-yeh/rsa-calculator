@@ -194,44 +194,188 @@ export default function Home() {
             ))}
         </select>
 
-        {selectedStep && (
-          <div className="mt-4">
-            <h2 className="text-lg font-bold">Selected Step Details:</h2>
-            <p>Step Number: {selectedStep.number}</p>
-            <p>Hourly Wage: ${selectedStep.hourly.toFixed(2)}</p>
-          </div>
-        )}
-
-        <div className="grid grid-cols-7">
-          {CALCULATED_RATES.map((rate) => {
-            const { finalAmount, percentageIncrease, cumulativePercentage } =
-              calculateMax(rate.title);
-            return (
-              <div
-                key={`${rate.title}-${rate.maxAmt}`}
-                className="p-4 border text-center"
-              >
-                <div className="border-b-2 pb-2 mb-2 h-1/3">{rate.title}</div>
-                <div className="grid-rows-4">
-                  <div>
-                    <span className="font-semibold">Final Amount:</span> $
-                    {finalAmount}
-                  </div>
-                  <div>
-                    <span className="font-semibold">%age Increase:</span>{" "}
-                    {percentageIncrease}%
-                  </div>
-                  <div>
-                    <span className="font-semibold">
-                      Cumulative %age Increase
-                    </span>{" "}
-                    {cumulativePercentage}%
-                  </div>
-                </div>
-              </div>
-            );
-          })}
+        <div className="mt-4">
+          <h2 className="text-lg font-bold">Selected Step Details:</h2>
+          <p>Step Number: {selectedStep?.number || "Select a step"}</p>
+          <p>
+            Hourly Wage: {selectedStep && "$" + selectedStep?.hourly.toFixed(2) || "Select a step"}
+          </p>
         </div>
+
+       {/* Immediate Table */}
+       <div className="mt-8">
+          <table className="min-w-full table-auto border-collapse">
+            <thead>
+              <tr>
+                <th className="border p-2">Immediate Range Increase</th>
+                <th className="border p-2">December 2025 Range Increase</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border p-2">
+                  New Hourly Rate:
+                </td>
+                <td className="border p-2">
+                  ${calculateMax("Dec 2025 Range Increase").finalAmount}
+                </td>
+              </tr>
+              <tr>
+                <td className="border p-2">
+                Percentage Increase:
+                </td>
+                <td className="border p-2">
+                  {calculateMax("Dec 2025 Range Increase").percentageIncrease}%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* Contract Year 1 Table */}
+        <div className="mt-8">
+          <table className="min-w-full table-auto border-collapse">
+            <thead>
+              <tr>
+                <th className="border p-2">Contract Year 1</th>
+                <th className="border p-2">December 2025 9% COLA</th>
+                <th className="border p-2">Next Anniversary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border p-2">
+                  New Hourly Rate:
+                </td>
+                <td className="border p-2">
+                  ${calculateMax("December 2025 9% COLA").finalAmount}
+                </td>
+                <td className="border p-2">
+                  ${calculateMax("Next Anniversary 2025").finalAmount}
+                </td>
+              </tr>
+              <tr>
+                <td className="border p-2">
+                  Percentage Increase:
+                </td>
+                <td className="border p-2">
+                  {calculateMax("December 2025 9% COLA").percentageIncrease}%
+                </td>
+                <td className="border p-2">
+                  {calculateMax("Next Anniversary 2025").percentageIncrease}%
+                </td>
+              </tr>
+              <tr>
+                <td className="border p-2">
+                  Cumulative Percentage Increase:
+                </td>
+                <td className="border p-2">
+                  {calculateMax("December 2025 9% COLA").cumulativePercentage}%
+                </td>
+                <td className="border p-2">
+                  {calculateMax("Next Anniversary 2025").cumulativePercentage}%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* Contract Year 2 Table */}
+        <div className="mt-8">
+          <table className="min-w-full table-auto border-collapse">
+            <thead>
+              <tr>
+                <th className="border p-2">Contract Year 2</th>
+                <th className="border p-2">December 2026 5% COLA</th>
+                <th className="border p-2">Next Anniversary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border p-2">
+                  New Hourly Rate:
+                </td>
+                <td className="border p-2">
+                  ${calculateMax("December 2026 5% COLA").finalAmount}
+                </td>
+                <td className="border p-2">
+                  ${calculateMax("Next Anniversary 2026").finalAmount}
+                </td>
+              </tr>
+              <tr>
+                <td className="border p-2">
+                  Percentage Increase:
+                </td>
+                <td className="border p-2">
+                  {calculateMax("December 2026 5% COLA").percentageIncrease}%
+                </td>
+                <td className="border p-2">
+                  {calculateMax("Next Anniversary 2026").percentageIncrease}%
+                </td>
+              </tr>
+              <tr>
+                <td className="border p-2">
+                  Cumulative Percentage Increase:
+                </td>
+                <td className="border p-2">
+                  {calculateMax("December 2026 5% COLA").cumulativePercentage}%
+                </td>
+                <td className="border p-2">
+                  {calculateMax("Next Anniversary 2026").cumulativePercentage}%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+         {/* Contract Year 3 Table */}
+         <div className="mt-8">
+          <table className="min-w-full table-auto border-collapse">
+            <thead>
+              <tr>
+                <th className="border p-2">Contract Year 3</th>
+                <th className="border p-2">December 2027 5% COLA</th>
+                <th className="border p-2">Next Anniversary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border p-2">
+                  New Hourly Rate:
+                </td>
+                <td className="border p-2">
+                  ${calculateMax("December 2027 5% COLA").finalAmount}
+                </td>
+                <td className="border p-2">
+                  ${calculateMax("Next Anniversary 2027").finalAmount}
+                </td>
+              </tr>
+              <tr>
+                <td className="border p-2">
+                  Percentage Increase:
+                </td>
+                <td className="border p-2">
+                  {calculateMax("December 2027 5% COLA").percentageIncrease}%
+                </td>
+                <td className="border p-2">
+                  {calculateMax("Next Anniversary 2027").percentageIncrease}%
+                </td>
+              </tr>
+              <tr>
+                <td className="border p-2">
+                  Cumulative Percentage Increase:
+                </td>
+                <td className="border p-2">
+                  {calculateMax("December 2027 5% COLA").cumulativePercentage}%
+                </td>
+                <td className="border p-2">
+                  {calculateMax("Next Anniversary 2027").cumulativePercentage}%
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
