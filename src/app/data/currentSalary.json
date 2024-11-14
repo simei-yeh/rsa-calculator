@@ -732,54 +732,6 @@
     ]
   },
   {
-    "job_title": "WELFARE FRAUD INVESTIGATOR-A",
-    "steps": [
-      { "number": 1, "hourly": 27.03 },
-      { "number": 2, "hourly": 28.11 },
-      { "number": 3, "hourly": 29.24 },
-      { "number": 4, "hourly": 30.41 },
-      { "number": 5, "hourly": 31.62 },
-      { "number": 6, "hourly": 32.89 },
-      { "number": 7, "hourly": 34.2 },
-      { "number": 8, "hourly": 35.57 },
-      { "number": 9, "hourly": 36.99 },
-      { "number": 10, "hourly": 38.47 },
-      { "number": 11, "hourly": 40.01 },
-      { "number": 12, "hourly": 41.61 },
-      { "number": 13, "hourly": 43.28 },
-      { "number": 14, "hourly": 45.01 },
-      { "number": 15, "hourly": 46.81 },
-      { "number": 16, "hourly": 48.68 },
-      { "number": 17, "hourly": 50.63 },
-      { "number": 18, "hourly": 52.65 },
-      { "number": 19, "hourly": 53.59 }
-    ]
-  },
-  {
-    "job_title": "WELFARE FRAUD INVESTIGATOR-B",
-    "steps": [
-      { "number": 1, "hourly": 27.75 },
-      { "number": 2, "hourly": 28.86 },
-      { "number": 3, "hourly": 30.01 },
-      { "number": 4, "hourly": 31.21 },
-      { "number": 5, "hourly": 32.46 },
-      { "number": 6, "hourly": 33.76 },
-      { "number": 7, "hourly": 35.11 },
-      { "number": 8, "hourly": 36.52 },
-      { "number": 9, "hourly": 37.98 },
-      { "number": 10, "hourly": 39.5 },
-      { "number": 11, "hourly": 41.08 },
-      { "number": 12, "hourly": 42.72 },
-      { "number": 13, "hourly": 44.43 },
-      { "number": 14, "hourly": 46.21 },
-      { "number": 15, "hourly": 48.05 },
-      { "number": 16, "hourly": 49.98 },
-      { "number": 17, "hourly": 51.98 },
-      { "number": 18, "hourly": 54.05 },
-      { "number": 19, "hourly": 55.03 }
-    ]
-  },
-  {
     "job_title": "SUPERVISING WELFARE FRAUD INVESTIGATOR",
     "steps": [
       { "number": 1, "hourly": 28.55 },
@@ -802,56 +754,6 @@
       { "number": 18, "hourly": 55.61 },
       { "number": 19, "hourly": 57.84 },
       { "number": 20, "hourly": 58.09 }
-    ]
-  },
-  {
-    "job_title": "SUPERVISING WELFARE FRAUD INVESTIGATOR-A",
-    "steps": [
-      { "number": 1, "hourly": 29.33 },
-      { "number": 2, "hourly": 30.5 },
-      { "number": 3, "hourly": 31.72 },
-      { "number": 4, "hourly": 32.99 },
-      { "number": 5, "hourly": 34.31 },
-      { "number": 6, "hourly": 35.68 },
-      { "number": 7, "hourly": 37.11 },
-      { "number": 8, "hourly": 38.6 },
-      { "number": 9, "hourly": 40.14 },
-      { "number": 10, "hourly": 41.75 },
-      { "number": 11, "hourly": 43.42 },
-      { "number": 12, "hourly": 45.15 },
-      { "number": 13, "hourly": 46.96 },
-      { "number": 14, "hourly": 48.84 },
-      { "number": 15, "hourly": 50.79 },
-      { "number": 16, "hourly": 52.82 },
-      { "number": 17, "hourly": 54.93 },
-      { "number": 18, "hourly": 57.13 },
-      { "number": 19, "hourly": 59.42 },
-      { "number": 20, "hourly": 59.67 }
-    ]
-  },
-  {
-    "job_title": "SUPERVISING WELFARE FRAUD INVESTIGATOR-B",
-    "steps": [
-      { "number": 1, "hourly": 30.1 },
-      { "number": 2, "hourly": 31.3 },
-      { "number": 3, "hourly": 32.56 },
-      { "number": 4, "hourly": 33.86 },
-      { "number": 5, "hourly": 35.21 },
-      { "number": 6, "hourly": 36.62 },
-      { "number": 7, "hourly": 38.09 },
-      { "number": 8, "hourly": 39.61 },
-      { "number": 9, "hourly": 41.19 },
-      { "number": 10, "hourly": 42.84 },
-      { "number": 11, "hourly": 44.56 },
-      { "number": 12, "hourly": 46.34 },
-      { "number": 13, "hourly": 48.19 },
-      { "number": 14, "hourly": 50.12 },
-      { "number": 15, "hourly": 52.12 },
-      { "number": 16, "hourly": 54.21 },
-      { "number": 17, "hourly": 56.38 },
-      { "number": 18, "hourly": 58.63 },
-      { "number": 19, "hourly": 60.98 },
-      { "number": 20, "hourly": 61.26 }
     ]
   }
 ]
