@@ -205,9 +205,15 @@ export default function Home() {
     if (index > 0) {
       prevFinalAmount = calculateMax(CALCULATED_RATES[index - 1].title).finalAmount;
       if (prevFinalAmount !== "N/A") {
-        const previousIncrease = Math.round((finalAmount - parseFloat(prevFinalAmount)) /
+        let previousIncrease = (finalAmount - parseFloat(prevFinalAmount)) /
         parseFloat(prevFinalAmount) *
-        100);
+        100;
+        if (isCloseToWhole(previousIncrease)) {
+          previousIncrease = Math.round(previousIncrease);
+        } else {
+          previousIncrease = previousIncrease;
+        }
+
         previousPercentageIncrease = (
           previousIncrease
         ).toFixed(2);
