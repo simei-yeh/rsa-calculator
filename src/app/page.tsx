@@ -165,10 +165,26 @@ export default function Home() {
     }
 
     // Calculate percentage increase based on the capped final amount
-    const percentageIncrease = (
+    let percentageIncrease = (
       ((finalAmount - originalSalary) / originalSalary) *
       100
-    ).toFixed(2);
+    );
+
+    // Tolerance threshold for rounding (±0.02%)
+    const tolerance = 0.03;
+    const roundedPercentage = Math.round(percentageIncrease * 100) / 100; // Round to 2 decimal places
+
+    // Check if percentageIncrease is within tolerance to a whole number (like 4.00 or 5.00)
+    const isCloseToWhole = (value: number) => {
+      return Math.abs(value - Math.round(value)) <= tolerance;
+    };
+
+    // Adjust percentage increase to the exact whole number if it's within tolerance
+    if (isCloseToWhole(roundedPercentage)) {
+      percentageIncrease = Math.round(roundedPercentage);
+    } else {
+      percentageIncrease = roundedPercentage;
+    }
 
     // Calculate cumulative percentage increase
     cumulativePercentage =
@@ -189,10 +205,11 @@ export default function Home() {
     if (index > 0) {
       prevFinalAmount = calculateMax(CALCULATED_RATES[index - 1].title).finalAmount;
       if (prevFinalAmount !== "N/A") {
+        const previousIncrease = Math.round((finalAmount - parseFloat(prevFinalAmount)) /
+        parseFloat(prevFinalAmount) *
+        100);
         previousPercentageIncrease = (
-          ((finalAmount - parseFloat(prevFinalAmount)) /
-            parseFloat(prevFinalAmount)) *
-          100
+          previousIncrease
         ).toFixed(2);
       }
     }
@@ -203,7 +220,6 @@ export default function Home() {
       cumulativePercentage: cumulativePercentage.toFixed(2),
     };
   };
-
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
