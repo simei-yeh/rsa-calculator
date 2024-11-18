@@ -155,31 +155,27 @@ export default function Home() {
       baseAmount *= CALCULATED_RATES[i].amt;
     }
 
-    const salaryCap = foundMaxJob[title];
-    let finalAmount = foundJob.min;
+    // Apply salary cap after calculating the final base amount
+    const maxTitle = CALCULATED_RATES[index].maxAmt;
+    const salaryCap = foundMaxJob[maxTitle];
+    let finalAmount = baseAmount;
 
-    // Check if salaryCap is a number before proceeding
     if (typeof salaryCap === "number") {
       finalAmount = Math.min(salaryCap, baseAmount);
     }
 
-    // Specific handling for "Next Anniversary" events
-    if (title.includes("Next Anniversary")) {
-      // Apply the cumulative effect for Next Anniversary titles
-      const prevFinalAmount = calculateMax(
-        CALCULATED_RATES[index - 1].title
-      ).finalAmount;
-      finalAmount =
-        prevFinalAmount !== "N/A"
-          ? parseFloat(prevFinalAmount) * CALCULATED_RATES[index].amt
-          : finalAmount;
-    }
+    // Calculate percentage increase based on the capped final amount
+    const percentageIncrease = (
+      ((finalAmount - originalSalary) / originalSalary) *
+      100
+    ).toFixed(2);
 
+    // Calculate cumulative percentage increase
+    cumulativePercentage =
+      ((finalAmount - originalSalary) / originalSalary) * 100;
+
+    // If it's the DEC_2024_RANGE_INCREASE event, calculate percentages accordingly
     if (title === SalaryEvent.DEC_2024_RANGE_INCREASE) {
-      const percentageIncrease = (
-        ((baseAmount - originalSalary) / originalSalary) *
-        100
-      ).toFixed(2);
       return {
         finalAmount: finalAmount.toFixed(2),
         percentageIncrease: percentageIncrease,
@@ -187,32 +183,27 @@ export default function Home() {
       };
     }
 
-    // Calculate percentage increase between current and previous final amounts
-    let percentageIncrease = "N/A";
+    // Calculate the percentage increase between current and previous final amounts
+    let prevFinalAmount = "N/A";
+    let previousPercentageIncrease = "N/A";
     if (index > 0) {
-      const prevFinalAmount = calculateMax(
-        CALCULATED_RATES[index - 1].title
-      ).finalAmount;
-      percentageIncrease =
-        prevFinalAmount !== "N/A"
-          ? (
-              ((finalAmount - parseFloat(prevFinalAmount)) /
-                parseFloat(prevFinalAmount)) *
-              100
-            ).toFixed(2)
-          : "N/A";
+      prevFinalAmount = calculateMax(CALCULATED_RATES[index - 1].title).finalAmount;
+      if (prevFinalAmount !== "N/A") {
+        previousPercentageIncrease = (
+          ((finalAmount - parseFloat(prevFinalAmount)) /
+            parseFloat(prevFinalAmount)) *
+          100
+        ).toFixed(2);
+      }
     }
-
-    // Calculate the cumulative percentage increase
-    cumulativePercentage =
-      ((finalAmount - originalSalary) / originalSalary) * 100;
 
     return {
       finalAmount: finalAmount.toFixed(2),
-      percentageIncrease: percentageIncrease,
+      percentageIncrease: previousPercentageIncrease,
       cumulativePercentage: cumulativePercentage.toFixed(2),
     };
   };
+
 
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 sm:p-20 font-[family-name:var(--font-geist-sans)]">
